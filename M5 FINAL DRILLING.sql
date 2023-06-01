@@ -122,4 +122,5 @@ FROM
 WHERE
     t1.TABLE_SCHEMA = 'public'
 ORDER BY
-    t1.TABLE_NAME;
+    t1.TABLE_NAME;  
+-- Se Agrega comentarios para hacer alguna diferencia
