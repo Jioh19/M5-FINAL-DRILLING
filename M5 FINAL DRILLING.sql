@@ -9,7 +9,7 @@
 --* TABLA CUSTOMER
 
 -- Insertar
-INSERT INTO customer 
+INSERT INTO customer (customer_id, store_id, first_name, last_name, email, address_id, activebool, create_date, last_update, active)
 VALUES 
 	(601, 1, 'Juan', 'Oh', 'correo1', 601, true, CURRENT_DATE, CURRENT_DATE, 1);
 
@@ -32,7 +32,7 @@ DELETE FROM customer WHERE customer_id = 602;
 --* TABLA STAFF
 
 -- Insertar:
-INSERT INTO staff
+INSERT INTO staff (staff_id, first_name,last_name, address_id, email, store_id, active, username, password, last_update)
 VALUES  
     (3, 'Staffer', 'McStaff', 5, 'correo2', 1, true, 'staff', 'qwerty', CURRENT_DATE);
 
@@ -56,7 +56,7 @@ DELETE FROM staff WHERE staff_id = 4;
 --* TABLA ACTOR
 
 -- Insertar
-INSERT INTO actor 
+INSERT INTO actor (actor_id, first_name, last_name, last_update)
 VALUES
 	(201, 'Actor', 'McActor', CURRENT_DATE);
 
